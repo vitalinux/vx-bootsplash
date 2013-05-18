@@ -1,0 +1,14 @@
+Source: vx-bootsplash
+Section: x11
+Priority: extra
+Maintainer: Jose Antonio Chavarría <jachavar@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/vitalinux/vx-bootsplash
+
+Package: vx-bootsplash
+Architecture: all
+Provides: plymouth-theme
+Depends: ${misc:Depends}, plymouth, plymouth-label
+Description: Customizing Ubuntu bootsplash.
+ Based in http://www.ubunturoot.com/2012/03/paw-1204-plymouth-theme.html.

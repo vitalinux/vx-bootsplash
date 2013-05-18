@@ -1,0 +1,7 @@
+vx-bootsplash (1.0-1) unstable; urgency=low
+
+  * El tema personalizado se basa en
+    http://www.ubunturoot.com/2012/03/paw-1204-plymouth-theme.html.
+  * La herramienta que se usa en Ubuntu es plymouth.
+
+ -- Jose Antonio Chavarría <jachavar@gmail.com>  Sat, 18 May 2013 11:34:58 +0200
