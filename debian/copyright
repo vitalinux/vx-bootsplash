@@ -5,7 +5,11 @@ Files: lib/plymouth/themes/vitalinux/*.png
 Copyright: 2012-2013 Ivan Cizik
 License: GPL-3.0+
 
-Files: lib/plymouth/themes/vitalinux/vitalinux.* lib/plymouth/themes/vitalinux/logo* debian/*
+Files: lib/plymouth/themes/vitalinux/logo*
+Copyright: 2013 Pedro Delicado Ponce <pedroponce@gmail.com>
+License: GPL-3.0+
+
+Files: lib/plymouth/themes/vitalinux/vitalinux.* debian/*
 Copyright: 2013 Jose Antonio Chavarría <jachavar@gmail.com>
 License: GPL-3.0+
 
