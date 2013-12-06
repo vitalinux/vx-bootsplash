@@ -8,6 +8,9 @@ Homepage: https://github.com/vitalinux/vx-bootsplash
 
 Package: vx-bootsplash
 Architecture: all
+Provides: vx-virtual-bootsplash
+Conflicts: vx-virtual-bootsplash
+Replaces: vx-virtual-bootsplash
 Provides: plymouth-theme
 Depends: ${misc:Depends}, plymouth, plymouth-label
 Description: Customizing Ubuntu bootsplash.
