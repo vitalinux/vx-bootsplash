@@ -1,8 +1,8 @@
 /* For startup we want a light theme with a throbber */
 if ( Plymouth.GetMode () == "boot" )
   {
-    Window.SetBackgroundTopColor (0.05, 0.12, 0.21);
-    Window.SetBackgroundBottomColor (0.05, 0.12, 0.21);
+    Window.SetBackgroundTopColor (0, 0, 0);
+    Window.SetBackgroundBottomColor (0, 0, 0);
 
     logo.image = Image("logo.png");
     logo.sprite = Sprite(logo.image);
@@ -21,8 +21,8 @@ if ( Plymouth.GetMode () == "boot" )
 /* In every other case we just want a pulsing logo */
 else
   {
-    Window.SetBackgroundTopColor (0.05, 0.12, 0.21);
-    Window.SetBackgroundBottomColor (0.05, 0.12, 0.21);
+    Window.SetBackgroundTopColor (0, 0, 0);
+    Window.SetBackgroundBottomColor (0, 0, 0);
 
     logo.image = Image("logo-alt.png");
     logo.sprite = Sprite(logo.image);
@@ -45,8 +45,8 @@ fun refresh ()
         progress_box.sprite.SetImage(new_progress_box.image);
         progress_box.sprite.SetOpacity(1);
       }
-    /* If we're in startup mode but status is not "normal" it probably means that 
-     * some event is taking place, possibly a request for password, or maybe 
+    /* If we're in startup mode but status is not "normal" it probably means that
+     * some event is taking place, possibly a request for password, or maybe
      * something failed, in any case we should just hide our throbber */
     else if (status != "normal" && mode == "boot" )
       {
@@ -56,7 +56,7 @@ fun refresh ()
      * suspending, resuming from suspend or we just don't know wtf's going on. :-D
      *
      * In any mode other than startup we just want to display a light pulsing logo
-     * on a dark background not only to differentiate it from startup but also to 
+     * on a dark background not only to differentiate it from startup but also to
      * allow the user to read any messages printed by Plymouth */
     else
       {
@@ -82,36 +82,36 @@ fun dialog_setup()
     local.box;
     local.lock;
     local.entry;
-    
+
     box.image = Image("box.png");
     lock.image = Image("lock.png");
     entry.image = Image("entry.png");
-    
+
     box.sprite = Sprite(box.image);
     box.x = Window.GetWidth()  / 2 - box.image.GetWidth ()/2;
     box.y = Window.GetHeight() / 2 - box.image.GetHeight()/2;
     box.z = 10000;
     box.sprite.SetPosition(box.x, box.y, box.z);
-    
+
     lock.sprite = Sprite(lock.image);
     lock.x = box.x + box.image.GetWidth()/2 - (lock.image.GetWidth() + entry.image.GetWidth()) / 2;
     lock.y = box.y + box.image.GetHeight()/2 - lock.image.GetHeight()/2;
     lock.z = box.z + 1;
     lock.sprite.SetPosition(lock.x, lock.y, lock.z);
-    
+
     entry.sprite = Sprite(entry.image);
     entry.x = lock.x + lock.image.GetWidth();
     entry.y = box.y + box.image.GetHeight()/2 - entry.image.GetHeight()/2;
     entry.z = box.z + 1;
     entry.sprite.SetPosition(entry.x, entry.y, entry.z);
-    
+
     global.dialog.box = box;
     global.dialog.lock = lock;
     global.dialog.entry = entry;
     global.dialog.bullet_image = Image("bullet.png");
     dialog_opacity (1);
   }
-    
+
 fun dialog_opacity(opacity)
   {
     dialog.box.sprite.SetOpacity (opacity);
