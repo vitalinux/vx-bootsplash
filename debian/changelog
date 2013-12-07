@@ -4,7 +4,7 @@ vx-bootsplash (1.1-1) unstable; urgency=low
   * Se añade la capacidad de paquete virtual (vx-virtual-bootsplash) para que
     cada sabor o versión pueda personalizar este aspecto a su gusto.
 
- -- Jose Antonio Chavarría <jachavar@gmail.com>  Fri, 6 Dic 2013 11:58:31 +0200
+ -- Jose Antonio Chavarría <jachavar@gmail.com>  Sat, 7 Dec 2013 11:35:31 +0200
 
 vx-bootsplash (1.0-1) unstable; urgency=low
 
