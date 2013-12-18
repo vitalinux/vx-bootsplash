@@ -1,3 +1,11 @@
+vx-bootsplash (1.2-1) unstable; urgency=low
+
+  * Se cambia el logo del tema de Plymouth (closes #2).
+    - Se vuelve a cambiar el color de fondo (ya no es necesario que sea negro,
+      porque el fondo del logo es transparente).
+
+ -- Jose Antonio Chavarría <jachavar@gmail.com>  Wed, 18 Dec 2013 12:03:12 +0200
+
 vx-bootsplash (1.1-1) unstable; urgency=low
 
   * Se cambia el logo del tema de Plymouth (closes #1).
