@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Vitalinux
+Description=Ubuntu theme based on Paw theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/vitalinux
+ScriptFile=/usr/share/plymouth/themes/vitalinux/vitalinux.script

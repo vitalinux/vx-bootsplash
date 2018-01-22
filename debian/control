@@ -3,7 +3,7 @@ Section: x11
 Priority: extra
 Maintainer: Jose Antonio Chavarría <jachavar@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: https://github.com/vitalinux/vx-bootsplash
 
 Package: vx-bootsplash
@@ -13,4 +13,4 @@ Conflicts: vx-virtual-bootsplash
 Replaces: vx-virtual-bootsplash
 Depends: ${misc:Depends}, plymouth, plymouth-label
 Description: Customizing Ubuntu bootsplash.
- Based in http://www.ubunturoot.com/2012/03/paw-1204-plymouth-theme.html.
+ Based in http://rajeshksv.blogspot.com.es/2017/02/customize-ubuntu-linux-plymouth-splash.html.
